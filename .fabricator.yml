@@ -1,0 +1,13 @@
+apiVersion: fabricator.cestus.io/v1alpha1
+kind: Config
+components:
+  - name: gotypes
+    generator: fabricator-generate-project-go
+    spec:
+      goModule: code.cestus.io/libs/gotypes
+      repoURL: https://github.com/CestusIO/gotypes
+      isLib: true
+  - name: gotypes
+    generator: fabricator-generate-go
+    spec:
+      packageName: gotypes
